@@ -27,3 +27,5 @@ def test_details():
     email= jsonpath.jsonpath(response_json, 'data[2].email')
     print(email[0])
     assert email[0]== 'tobias.funke@reqres.in', "this is the WRONG email address!!!"
+    firstUserId12_firstName= jsonpath.jsonpath(response_json, 'data[5].first_name')[0]
+    print(firstUserId12_firstName)
